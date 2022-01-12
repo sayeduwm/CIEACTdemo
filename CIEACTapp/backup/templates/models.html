@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+        <title>Models</title>   
+<meta charset="UTF-8">		
+        <link rel="stylesheet" href="{% static 'css/site.css' %}">
+    </head>
+<body>
+
+	
+        {% for message in messages %}		
+            <div>
+		<!--| means OR operator-->
+                <strong>{{message|safe}}</strong>
+            </div>
+        {% endfor %}
+		<br> <br><br> <br>
+		{% for result in m %}		
+            <div>
+		<!--| means OR operator-->
+               
+				<li> Crash Number: {{ result.CRSHNMBR }}................. NoisyORU: <a href="/polls/{{ result.LATDECDG}}/">{{ result.NOISYORU }}</a></li>
+            </div>
+        {% endfor %}
+   
+
+
+</body>
+</html>

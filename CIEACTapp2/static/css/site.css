@@ -1,0 +1,151 @@
+body {
+  background: rgb(200, 200,200);  
+  color:black;
+  text-align: center;
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 100%;
+    margin-top: 0;
+	  color:black;
+  }
+}
+
+ul.a {
+  list-style-type: none;
+  background:rgb(255, 254, 255);
+  margin: 0;
+  padding: 0;
+}
+ul.b {
+  list-style-type: squere;
+  margin: 0;
+  padding: 0;
+}
+
+li.a {
+  display: inline-block;
+  margin-right: 20px;
+}
+li.b {
+   margin-right: 2px;
+}
+
+ol{
+  list-style-type: 1;
+  line-height:1.6;
+}
+
+
+
+h1 {
+	margin: 0 auto;
+
+  font-weight: bold;
+  text-align:  center;    
+  
+}
+
+.h1home {
+
+  color: rgba(245, 245, 250, 1);
+}
+.h1pizza {
+
+  color: rgba(255, 8, 0, 1);
+}
+.h1fish {
+   color: rgba(235, 10, 179, 1);
+}
+.h1beverage {
+   color: rgba(42, 241, 16, 1);
+}
+
+
+span {
+  font-size: 130%;
+  color:rgb(255, 238, 0);
+ 
+}
+
+
+/* unvisited link */
+a:link {
+  color: red;
+  font-weight:bold;
+  font-size:120%;
+
+}
+
+/* visited link */
+a:visited {
+  color: rgba(0, 174, 255, 0.246);
+  
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+a.a{
+  color:white;
+}
+
+.clearfix{
+  overflow:auto;
+}
+img{
+  padding: 10px;
+}
+.img2 {
+  float: right;
+  padding:20px;
+}
+
+.img3 {
+  float: left;
+  padding:20px;
+}
+h2{
+  color:blue;
+  margin: 50 auto ;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

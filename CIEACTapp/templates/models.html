@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>	
+    <title>Models</title>   
+	<meta charset="UTF-8">		
+     <link rel="stylesheet" href="{% static 'css/site.css' %}">
+	 	<style>
+		h1,
+		h3 {
+			text-align: center;
+		}
+
+		table {
+			border-spacing: 0px;
+			table-layout: fixed;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		th {
+			color: green;
+			border: 1px solid black;
+		}
+
+		td {
+			border: 1px solid black;
+            background-color:rgb(100,100,100,0.1);
+			text-align: left;	
+			
+            
+			word-wrap: break-word;
+		}
+	</style>
+    </head>
+<body>
+
+		<h1 style="color:green;">Model(s) Result</h1>
+		<table width=auto%>
+			<tr>
+				<th>Crash Number</th>
+				<th>Narratives</th>
+				<th>NoisyORU</th>
+				<th>NoisyORB</th>
+			</tr>
+		
+		
+			
+	
+		{% for result in m %}		
+            <tr>
+		<!--| means OR operator-->
+               
+				<td> {{result.CRSHNMBR}}</td>
+				<td>{{result.TEXTVIZ|safe}}</td>
+				<td>{{result.NOISYORU}} </td>
+				<td>{{result.NOISYOORB}} </td>
+		
+		<!--|NoisyORU: <a href="/polls/{{ result.LATDECDG}}/">{{ result.NOISYORU }}</a></li>-->
+            
+			</tr>
+        {% endfor %}
+	</table>
+   
+
+
+</body>
+</html>
