@@ -1,3 +1,2 @@
 # CIEACTdemo
-working directory for CIEACT web tool.
-git push origin master
+Text mining and machine learning techniques have been shown to be efficient and effective in automatically extracting critical information from crash narratives to aid in crash analysis and classification, particularly for misclassified or overlooked crashes. The models created from the NoisyOr classifier and the neural network model GRU serve as the tool's engine. The tool's interface is an interactive crash map that can display the results and support spatial safety analysis. CIEACT's functions and analysis can provide safety practitioners and professionals with maximum and quick access to information stored in crash narrative texts, resulting in a significant reduction in crash report review time.
